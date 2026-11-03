@@ -1,20 +1,30 @@
 /* ===================================================
    PALETA DARK LUXURY & GOLD GLASS — DECO PISOS
+   Cor Oficial da Marca: Deco Gold / Ouro Âmbar (#E0A729)
    =================================================== */
 :root {
-    /* Cores de Fundo & Superfícies */
-    --bg-main: #0A0D12;
-    --bg-header: rgba(10, 13, 18, 0.85);
-    --bg-card: rgba(16, 21, 30, 0.75);
-    --bg-card-hover: rgba(24, 31, 45, 0.88);
-    --bg-modal: rgba(12, 16, 24, 0.98);
+    /* Cores de Fundo & Superfícies Obsidian */
+    --bg-main: #080A0E;
+    --bg-header: rgba(8, 10, 14, 0.88);
+    --bg-card: rgba(14, 18, 26, 0.78);
+    --bg-card-hover: rgba(20, 26, 38, 0.92);
+    --bg-modal: rgba(10, 13, 19, 0.98);
     --bg-input: rgba(255, 255, 255, 0.05);
-    --bg-input-focus: rgba(255, 255, 255, 0.09);
+    --bg-input-focus: rgba(224, 167, 41, 0.12);
+
+    /* Identidade Ouro Deco Pisos (#E0A729) */
+    --primary: #E0A729;
+    --primary-light: #F2C155;
+    --primary-lighter: #FFE599;
+    --primary-dark: #B88316;
+    --primary-gradient: linear-gradient(135deg, #FFF1CD 0%, #F2C155 40%, #E0A729 80%, #B88316 100%);
+    --primary-glow: rgba(224, 167, 41, 0.4);
+    --primary-border: rgba(224, 167, 41, 0.35);
+    --primary-border-focus: rgba(242, 193, 85, 0.75);
 
     /* Bordas & Efeitos de Vidro */
-    --glass-border: rgba(255, 255, 255, 0.12);
-    --glass-border-light: rgba(255, 255, 255, 0.06);
-    --glass-border-focus: rgba(224, 167, 41, 0.55);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-border-light: rgba(255, 255, 255, 0.05);
     --glass-shine: inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
     /* Tipografia & Contrastes */
@@ -23,13 +33,10 @@
     --text-secondary: #CBD5E1;
     --text-muted: #94A3B8;
 
-    /* Acentos Ouro Deco (Identidade Visual da Marca) */
-    --primary: #E0A729;
-    --primary-hover: #F2B83E;
-    --primary-glow: rgba(224, 167, 41, 0.35);
-    --metallic-silver: #E0A729;
-    --metallic-glow: rgba(224, 167, 41, 0.25);
-    --surface-dark: #121620;
+    /* Botão de Ação Ouro */
+    --btn-calc-bg: linear-gradient(135deg, #F2C155 0%, #E0A729 100%);
+    --btn-calc-color: #0A0D12;
+    --btn-calc-hover: linear-gradient(135deg, #FFD166 0%, #F2B83E 100%);
 
     /* WhatsApp & Conversão Esmeralda */
     --accent-whatsapp: #10B981;
