@@ -1,5 +1,5 @@
 // ==========================================
-// CONFIGURAÇÃO DECO PISOS — PISOS LAMINADOS E VINÍLICOS
+// CONFIGURAÇÃO DECO PISOS — KITS DE PISOS LAMINADOS E VINÍLICOS
 // ==========================================
 
 const CONFIG = {
@@ -12,43 +12,53 @@ const CONFIG = {
         telefoneExibicao: "(21) 99771-5563",
         tempoMercado: "8 anos de experiência",
         cnpj: "62.685.501/0001-06",
-        garantiaInstalacao: "1 ano",
-        garantiaProduto: "De 7 a 25 anos (e vitalícia em linhas selecionadas)"
+        garantiaProduto: "De 7 a 25 anos de fábrica",
+        site: "www.decopisos.com.br",
+        instagram: "@decopisosrj"
     },
 
-    // 2. OPÇÕES DE PISOS E PREÇOS (CONFORME BRIEFING OFICIAL)
-    // ⚠️ Valores por m² com mão de obra própria qualificada de fábrica inclusa
+    // 2. KITS OFICIAIS DE PISOS (EXCLUSIVOS CONFORME CAMPANHA)
+    // ⚠️ Somente materiais. Instalação não inclusa.
+    // ⚠️ Kit mínimo de 10 m². Para áreas menores, aplica-se o valor do kit mínimo.
     pisos: [
         {
-            categoria: "Pisos Vinílicos de Alto Padrão (100% Resistentes à Água)",
-            nome: "Piso Vinílico Colado LVT (Tarkett / Quick-Step / Ecomex)",
-            preco: 294.00,
-            sobConsulta: false,
-            // R$ 294,00/m² conforme briefing
-            descricao: "Pacote Completo: Piso Vinílico Colado LVT + Massa de Nivelamento + Cola Especial + Mão de Obra Própria Qualificada de Fábrica. Máximo conforto térmico e acústico."
+            id: "laminado-mata-atlantica",
+            categoria: "Kits de Pisos Laminados",
+            nome: "Kit Piso Laminado — Linha Mata Atlântica",
+            linha: "Linha Mata Atlântica",
+            precoM2: 199.90,
+            metragemMinima: 10,
+            precoMinimo: 1999.00,
+            cores: ["Pitanga", "Amêndola", "Oliver", "Orquídea"],
+            itensBase: [
+                "10 m² de piso laminado Linha Mata Atlântica",
+                "10 m² de manta Eucafloor 2 mm",
+                "4 barras de rodapé branco Eucafloor 7 cm (2,40 m)",
+                "1 barra de perfil T ou redutor Eucafloor (1,80 m)"
+            ],
+            composicaoResumida: "10 m² piso laminado + manta Eucafloor 2mm + 4 barras rodapé 7cm + 1 barra perfil T/redutor",
+            descricaoCompleta: "Composição base (10 m²): 10 m² de piso laminado Linha Mata Atlântica + 10 m² de manta Eucafloor 2 mm + 4 barras de rodapé branco Eucafloor 7 cm (2,40 m) + 1 barra de perfil T ou redutor Eucafloor (1,80 m). Quantidades ajustadas proporcionalmente à metragem e embalagens.",
+            aviso: "Somente materiais. Instalação não inclusa. Kit mínimo de 10 m² por R$ 1.999,00."
         },
         {
-            categoria: "Pisos Vinílicos de Alto Padrão (100% Resistentes à Água)",
-            nome: "Piso Vinílico Click SPC Rígido (Quick-Step / Graddus / Pix)",
-            preco: 290.00,
-            sobConsulta: false,
-            // R$ 290,00/m² conforme briefing
-            descricao: "Pacote Completo: Piso Vinílico Click SPC (sem uso de cola) + Manta Acústica Integrada + Perfis de Transição + Instalação Especializada Própria."
-        },
-        {
-            categoria: "Pisos Laminados de Alta Durabilidade",
-            nome: "Piso Laminado Linha Premium (Quick-Step / Tarkett)",
-            preco: 239.90,
-            sobConsulta: false,
-            // R$ 239,90/m² conforme briefing
-            descricao: "Pacote Completo: Piso Laminado de Alta Resistência + Manta de Amortecimento + Perfis de Acabamento + Mão de Obra Própria da Loja."
-        },
-        {
-            categoria: "Pisos Especiais & Paginações Autorais",
-            nome: "Piso Vinílico Chevron / Espinha de Peixe (Design Nobre)",
-            preco: null,
-            sobConsulta: true,
-            descricao: "Pacote Arquitetônico: Paginação nobre Chevron ou Espinha de Peixe com cortes angulares milimétricos e acabamento de luxo. Consulte padrões disponíveis."
+            id: "vinilico-eco-home",
+            categoria: "Kits de Pisos Vinílicos",
+            nome: "Kit Piso Vinílico — Ecomex • Linha Eco Home 2 mm",
+            linha: "Ecomex • Linha Eco Home 2 mm",
+            precoM2: 299.90,
+            metragemMinima: 10,
+            precoMinimo: 2999.00,
+            cores: ["Nice", "Lyon", "Bize", "Versalhes"],
+            itensBase: [
+                "10 m² de piso vinílico Ecomex Eco Home 2 mm",
+                "1 unidade de cola vinílica Protec 4 kg",
+                "5 sacos de massa autonivelante Protec Base 20 kg",
+                "1 galão de primer Multibases Protec 5 L",
+                "4 barras de rodapé branco Eucafloor 7 cm (2,40 m)"
+            ],
+            composicaoResumida: "10 m² piso vinílico + cola Protec 4kg + 5 sacos massa autonivelante 20kg + 1 galão primer 5L + 4 barras rodapé 7cm",
+            descricaoCompleta: "Composição base (10 m²): 10 m² de piso vinílico Ecomex Eco Home 2 mm + 1 unidade de cola vinílica Protec 4 kg + 5 sacos de massa autonivelante Protec Base 20 kg + 1 galão de primer Multibases Protec 5 L + 4 barras de rodapé branco Eucafloor 7 cm (2,40 m). Quantidades ajustadas proporcionalmente à metragem e embalagens.",
+            aviso: "Somente materiais. Instalação não inclusa. Kit mínimo de 10 m² por R$ 2.999,00."
         }
     ],
 
@@ -63,12 +73,12 @@ const CONFIG = {
 
     // 4. BÔNUS E INCLUSÕES NO ORÇAMENTO (Modal de Resultado Executivo)
     bonus: [
-        { titulo: "Mão de Obra Própria da Loja (Qualificada de Fábrica)", subtitulo: "INCLUSO", strike: "", gratis: true },
+        { titulo: "Kit Completo de Materiais de Fábrica", subtitulo: "INCLUSO", strike: "", gratis: true },
+        { titulo: "Piso + Acabamentos + Insumos de Fixação/Nivelamento", subtitulo: "INCLUSO NO KIT", strike: "", gratis: true },
         { titulo: "10% de Desconto para Pagamento à Vista", subtitulo: "DISPONÍVEL", strike: "", gratis: true },
         { titulo: "Parcelamento em até 10x Sem Juros no Cartão", subtitulo: "DISPONÍVEL", strike: "", gratis: true },
-        { titulo: "1 Ano de Garantia Técnica na Instalação", subtitulo: "INCLUSO", strike: "", gratis: true },
         { titulo: "Garantia de 7 a 25 Anos de Fábrica nos Produtos", subtitulo: "INCLUSO", strike: "", gratis: true },
-        { titulo: "Visita Técnica e Medição no Local", subtitulo: "CORTESIA*", strike: "R$ 150", gratis: true },
-        { titulo: "8 Anos de Experiência e Mais de Milhares de m² Instalados", subtitulo: "COMPROVADO", strike: "", gratis: true }
+        { titulo: "Cotação de Instalação Especializada (Opcional)", subtitulo: "SOB CONSULTA", strike: "", gratis: false },
+        { titulo: "Consultoria de Metragem e Suporte Técnico", subtitulo: "CORTESIA", strike: "R$ 150", gratis: true }
     ]
 };
